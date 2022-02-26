@@ -12,9 +12,77 @@
 		}
 	</style>
 </head>
-
 <body>
-
+	<form action="">
+		<h1>Registrati:</h1>
+		<section>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" required autofocus>
+			</div>
+			<div>	
+				<label for="password">Password</label>
+				<input type="password" id="password" required>
+			</div>
+			<div>
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" required>
+			</div>
+			<div>
+				<label for="cognome">Cognome</label>
+				<input type="text" id="cognome" required>
+			</div>
+			<div>
+				<label for="birthdate">Data di nascita</label>
+				<input type="date" id="birthdate" required>
+			</div>
+			<div>
+				<label for="phonenumber">Telefono</label>
+				<input type="tel" id="phonenumber" required>
+			</div>
+			<div>
+				<label for="piano">Seleziona il piano:</label>
+				<select id="piano">
+					<optgroup label="Free">
+						<option value="Base">Base</option>
+					</optgroup>
+					<optgroup label="Pay">
+						<option value="Standard">Standard- $10,99</option>
+						<option value="Premium">Premium- $13,99</option>
+						<option value="Ultra">Ultra- $16,99</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<br>
+				<label for="pro">
+					<span>Scegli i vantaggi del piano PRO</span>
+					<input type="checkbox" id="pro">
+				</label>
+				<br>
+			</div>
+			<div>
+				<label for="creditcardnumber">Numero di carta:</label>
+				<input type="tel" id="creditcardnumber" required pattern="[0-9]{19}" maxlenght="19" title="il campo deve contenere un numero massimo di 19 caratteri"> 
+			</div>
+			<div>
+				<label for="cvc">CVC:</label>
+				<input type="password" id="cvc" required pattern="[0-9]{3}$" placeholder="XXX" maxlength="3">
+			</div>
+			<div>
+				<label for="expiredate">Scadenza:</label>
+				<input type="month" id="expiredate" required>
+			</div>
+			<div>	
+				<label for="indirizzo">Indirizzo di fatturazione</label>
+				<input type="text" id="indirizzo" required>
+			</div>
+		</section>
+		<section>
+			<div>
+				<input type="submit" value="Registrati">
+			</div>
+		</section>	
+	</form>	
 </body>
-
 </html>
